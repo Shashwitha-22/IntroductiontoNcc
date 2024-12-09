@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Reading Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Map Reading Quiz</h1>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is a topographic map?</p>
+            <div class="answers">
+                <input type="radio" name="q1" value="a"> A map showing roads and highways<br>
+                <input type="radio" name="q1" value="b"> A map depicting the physical features of the terrain<br>
+                <input type="radio" name="q1" value="c"> A map showing political boundaries<br>
+                <input type="radio" name="q1" value="d"> A map used for navigation<br>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. What do contour lines represent on a topographic map?</p>
+            <div class="answers">
+                <input type="radio" name="q2" value="a"> Roads<br>
+                <input type="radio" name="q2" value="b"> Elevation of the land<br>
+                <input type="radio" name="q2" value="c"> Water bodies<br>
+                <input type="radio" name="q2" value="d"> Political boundaries<br>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. What is a grid reference used for?</p>
+            <div class="answers">
+                <input type="radio" name="q3" value="a"> To measure distances<br>
+                <input type="radio" name="q3" value="b"> To locate a specific point on a map<br>
+                <input type="radio" name="q3" value="c"> To identify road types<br>
+                <input type="radio" name="q3" value="d"> To find elevation changes<br>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. What does the scale on a map indicate?</p>
+            <div class="answers">
+                <input type="radio" name="q4" value="a"> The types of terrain<br>
+                <input type="radio" name="q4" value="b"> The distance between two points<br>
+                <input type="radio" name="q4" value="c"> The location of cities<br>
+                <input type="radio" name="q4" value="d"> The grid reference<br>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. What is the purpose of a compass rose on a map?</p>
+            <div class="answers">
+                <input type="radio" name="q5" value="a"> To show the scale<br>
+                <input type="radio" name="q5" value="b"> To indicate directions<br>
+                <input type="radio" name="q5" value="c"> To mark grid squares<br>
+                <input type="radio" name="q5" value="d"> To show terrain types<br>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. What is a "bearing" in map reading?</p>
+            <div class="answers">
+                <input type="radio" name="q6" value="a"> A type of compass<br>
+                <input type="radio" name="q6" value="b"> A direction or angle from a reference point<br>
+                <input type="radio" name="q6" value="c"> A specific location on the map<br>
+                <input type="radio" name="q6" value="d"> A method of navigation by the stars<br>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. How do you calculate the distance between two points on a map?</p>
+            <div class="answers">
+                <input type="radio" name="q7" value="a"> Multiply the scale by the grid reference<br>
+                <input type="radio" name="q7" value="b"> Use a ruler and the map scale<br>
+                <input type="radio" name="q7" value="c"> Estimate by eye<br>
+                <input type="radio" name="q7" value="d"> Use a GPS device<br>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. What is the purpose of a "legend" on a map?</p>
+            <div class="answers">
+                <input type="radio" name="q8" value="a"> To indicate the elevation of terrain<br>
+                <input type="radio" name="q8" value="b"> To explain the symbols and colors used on the map<br>
+                <input type="radio" name="q8" value="c"> To show the grid lines<br>
+                <input type="radio" name="q8" value="d"> To identify roads<br>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. What is a "contour interval"?</p>
+            <div class="answers">
+                <input type="radio" name="q9" value="a"> The difference in elevation between two contour lines<br>
+                <input type="radio" name="q9" value="b"> The distance between grid squares<br>
+                <input type="radio" name="q9" value="c"> The elevation at a specific point<br>
+                <input type="radio" name="q9" value="d"> The area covered by the map<br>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. What is "declination" in relation to map reading?</p>
+            <div class="answers">
+                <input type="radio" name="q10" value="a"> The difference between true north and magnetic north<br>
+                <input type="radio" name="q10" value="b"> The scale of the map<br>
+                <input type="radio" name="q10" value="c"> The method of measuring distances<br>
+                <input type="radio" name="q10" value="d"> The height of terrain features<br>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <p>11. What does "slope" refer to on a map?</p>
+            <div class="answers">
+                <input type="radio" name="q11" value="a"> The steepness or incline of terrain<br>
+                <input type="radio" name="q11" value="b"> The location of water bodies<br>
+                <input type="radio" name="q11" value="c"> The distance between two points<br>
+                <input type="radio" name="q11" value="d"> The size of grid squares<br>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <p>12. What is a "spot height" on a map?</p>
+            <div class="answers">
+                <input type="radio" name="q12" value="a"> The highest point in a region<br>
+                <input type="radio" name="q12" value="b"> A marked point indicating the elevation<br>
+                <input type="radio" name="q12" value="c"> A designated navigation point<br>
+                <input type="radio" name="q12" value="d"> A grid reference<br>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p>13. What is a "map projection"?</p>
+            <div class="answers">
+                <input type="radio" name="q13" value="a"> A type of compass<br>
+                <input type="radio" name="q13" value="b"> A method of representing the earth's surface on a flat map<br>
+                <input type="radio" name="q13" value="c"> A technique for estimating distances<br>
+                <input type="radio" name="q13" value="d"> A way to calculate elevation<br>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p>14. How can you identify a river on a topographic map?</p>
+            <div class="answers">
+                <input type="radio" name="q14" value="a"> By the blue color and the contour lines forming a "V" shape<br>
+                <input type="radio" name="q14" value="b"> By the red color<br>
+                <input type="radio" name="q14" value="c"> By the presence of roads nearby<br>
+                <input type="radio" name="q14" value="d"> By the use of dashed lines<br>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p>15. What is the best way to orient a map?</p>
+            <div class="answers">
+                <input type="radio" name="q15" value="a"> By aligning the map with the compass directions<br>
+                <input type="radio" name="q15" value="b"> By using landmarks in the terrain<br>
+                <input type="radio" name="q15" value="c"> By using the sun’s position<br>
+                <input type="radio" name="q15" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Your score: <span id="score"></span>/15</p>
+    </div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: "b",
+            q2: "b",
+            q3: "b",
+            q4: "b",
+            q5: "b",
+            q6: "b",
+            q7: "b",
+            q8: "b",
+            q9: "a",
+            q10: "a",
+            q11: "a",
+            q12: "b",
+            q13: "b",
+            q14: "a",
+            q15: "d",
+        };
+
+        let score = 0;
+        const form = document.forms["quizForm"];
+
+        for (const question in answers) {
+            const selected = form[question].value;
+            if (selected === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById("score").innerText = score;
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+</body>
+</html>

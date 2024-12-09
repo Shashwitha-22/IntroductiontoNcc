@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infantry Weapons and Equipment Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Infantry Weapons and Equipment Quiz</h1>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is the standard issue assault rifle for the U.S. military?</p>
+            <div class="answers">
+                <input type="radio" name="q1" value="a"> M16<br>
+                <input type="radio" name="q1" value="b"> AK-47<br>
+                <input type="radio" name="q1" value="c"> M4 Carbine<br>
+                <input type="radio" name="q1" value="d"> F2000<br>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. Which of the following is a type of infantry anti-tank weapon?</p>
+            <div class="answers">
+                <input type="radio" name="q2" value="a"> Javelin<br>
+                <input type="radio" name="q2" value="b"> TOW Missile<br>
+                <input type="radio" name="q2" value="c"> RPG-7<br>
+                <input type="radio" name="q2" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. What is the primary function of a bayonet in infantry combat?</p>
+            <div class="answers">
+                <input type="radio" name="q3" value="a"> Melee combat<br>
+                <input type="radio" name="q3" value="b"> Sniper support<br>
+                <input type="radio" name="q3" value="c"> Breaching doors<br>
+                <input type="radio" name="q3" value="d"> Signal communication<br>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. Which of the following is a standard sidearm for the U.S. Army?</p>
+            <div class="answers">
+                <input type="radio" name="q4" value="a"> Beretta 92FS<br>
+                <input type="radio" name="q4" value="b"> Glock 19<br>
+                <input type="radio" name="q4" value="c"> M1911<br>
+                <input type="radio" name="q4" value="d"> Desert Eagle<br>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. The M249 SAW (Squad Automatic Weapon) is used primarily for what purpose?</p>
+            <div class="answers">
+                <input type="radio" name="q5" value="a"> Anti-armor<br>
+                <input type="radio" name="q5" value="b"> Close combat<br>
+                <input type="radio" name="q5" value="c"> Suppressive fire<br>
+                <input type="radio" name="q5" value="d"> Sniping<br>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. What is the role of a grenade launcher attached to an infantry rifle?</p>
+            <div class="answers">
+                <input type="radio" name="q6" value="a"> To launch explosive grenades at a distance<br>
+                <input type="radio" name="q6" value="b"> To throw chemical agents<br>
+                <input type="radio" name="q6" value="c"> To mark targets<br>
+                <input type="radio" name="q6" value="d"> To fire high-caliber rounds<br>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. The M240B is a type of which kind of weapon?</p>
+            <div class="answers">
+                <input type="radio" name="q7" value="a"> Sniper rifle<br>
+                <input type="radio" name="q7" value="b"> Assault rifle<br>
+                <input type="radio" name="q7" value="c"> Machine gun<br>
+                <input type="radio" name="q7" value="d"> Anti-tank weapon<br>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. What does the acronym "MRE" stand for in military equipment?</p>
+            <div class="answers">
+                <input type="radio" name="q8" value="a"> Military Relief Equipment<br>
+                <input type="radio" name="q8" value="b"> Military Rations Equipment<br>
+                <input type="radio" name="q8" value="c"> Meal, Ready-to-Eat<br>
+                <input type="radio" name="q8" value="d"> Military Reconnaissance Equipment<br>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. What is the main purpose of body armor in infantry operations?</p>
+            <div class="answers">
+                <input type="radio" name="q9" value="a"> To enhance mobility<br>
+                <input type="radio" name="q9" value="b"> To protect against small arms fire<br>
+                <input type="radio" name="q9" value="c"> To increase weight for strength<br>
+                <input type="radio" name="q9" value="d"> To signal distress<br>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. What does the MRE package typically contain?</p>
+            <div class="answers">
+                <input type="radio" name="q10" value="a"> Snacks and water<br>
+                <input type="radio" name="q10" value="b"> A full meal with heating options<br>
+                <input type="radio" name="q10" value="c"> Rations for multiple days<br>
+                <input type="radio" name="q10" value="d"> Only canned food<br>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <p>11. What is the purpose of the M203 grenade launcher?</p>
+            <div class="answers">
+                <input type="radio" name="q11" value="a"> To provide air support<br>
+                <input type="radio" name="q11" value="b"> To launch grenades from a rifle<br>
+                <input type="radio" name="q11" value="c"> To fire rockets<br>
+                <input type="radio" name="q11" value="d"> To launch flares<br>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <p>12. What type of weapon is the Barrett M82?</p>
+            <div class="answers">
+                <input type="radio" name="q12" value="a"> Shotgun<br>
+                <input type="radio" name="q12" value="b"> Sniper rifle<br>
+                <input type="radio" name="q12" value="c"> Assault rifle<br>
+                <input type="radio" name="q12" value="d"> Anti-tank rifle<br>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p>13. The AT4 is a type of which kind of weapon?</p>
+            <div class="answers">
+                <input type="radio" name="q13" value="a"> Anti-aircraft<br>
+                <input type="radio" name="q13" value="b"> Anti-tank<br>
+                <input type="radio" name="q13" value="c"> Anti-personnel<br>
+                <input type="radio" name="q13" value="d"> Grenade launcher<br>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p>14. What is the function of an IFAK (Individual First Aid Kit) in infantry operations?</p>
+            <div class="answers">
+                <input type="radio" name="q14" value="a"> Provide medical supplies<br>
+                <input type="radio" name="q14" value="b"> Repair equipment<br>
+                <input type="radio" name="q14" value="c"> To carry extra ammunition<br>
+                <input type="radio" name="q14" value="d"> To mark safe zones<br>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p>15. What is a "Nod" in military terms?</p>
+            <div class="answers">
+                <input type="radio" name="q15" value="a"> Night Optical Device (Night vision)<br>
+                <input type="radio" name="q15" value="b"> Nuclear Ordinance Device<br>
+                <input type="radio" name="q15" value="c"> Navigation Objective Device<br>
+                <input type="radio" name="q15" value="d"> Net-Operated Drone<br>
+            </div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Your score: <span id="score"></span>/15</p>
+    </div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: "c",
+            q2: "d",
+            q3: "a",
+            q4: "c",
+            q5: "c",
+            q6: "a",
+            q7: "c",
+            q8: "c",
+            q9: "b",
+            q10: "b",
+            q11: "b",
+            q12: "b",
+            q13: "b",
+            q14: "a",
+            q15: "a",
+        };
+
+        let score = 0;
+        const form = document.forms["quizForm"];
+
+        for (const question in answers) {
+            const selected = form[question].value;
+            if (selected === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById("score").innerText = score;
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Army Wing Drill Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .summary {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>NCC Army Wing Drill Quiz</h1>
+    <form id="quizForm">
+        <!-- Add the 15 questions here -->
+        <!-- Reuse the same questions and options from your initial code -->
+        <!-- Question structure remains unchanged -->
+        <div class="question">
+            <p>1. What is the primary aim of the NCC Army Wing drill?</p>
+            <div class="answers">
+                <input type="radio" name="q1" value="a"> To teach the basic principles of military life<br>
+                <input type="radio" name="q1" value="b"> To improve the strength of soldiers<br>
+                <input type="radio" name="q1" value="c"> To develop basic drill techniques<br>
+                <input type="radio" name="q1" value="d"> None of the above<br>
+            </div>
+            <div class="question">
+                <p>2. What is the first command given during a drill session?</p>
+                <div class="answers">
+                    <input type="radio" name="q2" value="a"> Attention<br>
+                    <input type="radio" name="q2" value="b"> Stand at ease<br>
+                    <input type="radio" name="q2" value="c"> At ease<br>
+                    <input type="radio" name="q2" value="d"> Fall in<br>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What does the command “Stand at ease” instruct soldiers to do?</p>
+                <div class="answers">
+                    <input type="radio" name="q3" value="a"> Stand with legs apart and arms behind the back<br>
+                    <input type="radio" name="q3" value="b"> Relax and rest in position<br>
+                    <input type="radio" name="q3" value="c"> Stand in attention position<br>
+                    <input type="radio" name="q3" value="d"> Rest with legs crossed<br>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. When marching, what is the normal arm swing?</p>
+                <div class="answers">
+                    <input type="radio" name="q4" value="a"> Straight and stiff<br>
+                    <input type="radio" name="q4" value="b"> Slightly bent at 90 degrees<br>
+                    <input type="radio" name="q4" value="c"> Bent at the elbow at 45 degrees<br>
+                    <input type="radio" name="q4" value="d"> No arm movement<br>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What is the purpose of the “Halt” command?</p>
+                <div class="answers">
+                    <input type="radio" name="q5" value="a"> To signal a change in direction<br>
+                    <input type="radio" name="q5" value="b"> To stop the march<br>
+                    <input type="radio" name="q5" value="c"> To change posture<br>
+                    <input type="radio" name="q5" value="d"> To prepare for a salute<br>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. How many paces does a person take when executing a “halt” command in drill?</p>
+                <div class="answers">
+                    <input type="radio" name="q6" value="a"> 5 paces<br>
+                    <input type="radio" name="q6" value="b"> 10 paces<br>
+                    <input type="radio" name="q6" value="c"> 2 paces<br>
+                    <input type="radio" name="q6" value="d"> 3 paces<br>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Which foot is used for the first step when marching?</p>
+                <div class="answers">
+                    <input type="radio" name="q7" value="a"> Left foot<br>
+                    <input type="radio" name="q7" value="b"> Right foot<br>
+                    <input type="radio" name="q7" value="c"> Either foot<br>
+                    <input type="radio" name="q7" value="d"> Both feet simultaneously<br>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. What does the command "Eyes Right" mean in a drill?</p>
+                <div class="answers">
+                    <input type="radio" name="q8" value="a"> Look to the right while marching<br>
+                    <input type="radio" name="q8" value="b"> Turn the head to the right<br>
+                    <input type="radio" name="q8" value="c"> Raise the right hand in salute<br>
+                    <input type="radio" name="q8" value="d"> March to the right<br>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. What is the command given to march in the opposite direction while on the spot?</p>
+                <div class="answers">
+                    <input type="radio" name="q9" value="a"> About turn<br>
+                    <input type="radio" name="q9" value="b"> Left face<br>
+                    <input type="radio" name="q9" value="c"> Right face<br>
+                    <input type="radio" name="q9" value="d"> Reverse march<br>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. What is the proper posture for "Attention"?</p>
+                <div class="answers">
+                    <input type="radio" name="q10" value="a"> Feet shoulder-width apart, hands by the sides, eyes straight ahead<br>
+                    <input type="radio" name="q10" value="b"> Standing with feet together and hands in pockets<br>
+                    <input type="radio" name="q10" value="c"> Legs spread apart with arms folded<br>
+                    <input type="radio" name="q10" value="d"> Standing tall with hands resting on hips<br>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <p>11. What is a "Right Face" command?</p>
+                <div class="answers">
+                    <input type="radio" name="q11" value="a"> Turn your body 90 degrees to the right<br>
+                    <input type="radio" name="q11" value="b"> Turn your body 180 degrees to the right<br>
+                    <input type="radio" name="q11" value="c"> Pivot to the right with one foot<br>
+                    <input type="radio" name="q11" value="d"> March in a circular motion to the right<br>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <p>12. What does the command "Fall in" mean?</p>
+                <div class="answers">
+                    <input type="radio" name="q12" value="a"> Soldiers should start marching<br>
+                    <input type="radio" name="q12" value="b"> Soldiers should form up into their positions<br>
+                    <input type="radio" name="q12" value="c"> Soldiers should stand at ease<br>
+                    <input type="radio" name="q12" value="d"> Soldiers should kneel down<br>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <p>13. What is the "March Off" command used for?</p>
+                <div class="answers">
+                    <input type="radio" name="q13" value="a"> To begin marching<br>
+                    <input type="radio" name="q13" value="b"> To end the drill<br>
+                    <input type="radio" name="q13" value="c"> To change directions during a march<br>
+                    <input type="radio" name="q13" value="d"> To move to a new formation<br>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <p>14. When does the "Present Arms" command apply in a drill?</p>
+                <div class="answers">
+                    <input type="radio" name="q14" value="a"> When saluting officers<br>
+                    <input type="radio" name="q14" value="b"> During ceremonies and formal events<br>
+                    <input type="radio" name="q14" value="c"> During a march<br>
+                    <input type="radio" name="q14" value="d"> When marching in a parade<br>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <p>15. What does the "Right Marker" command do in the drill?</p>
+                <div class="answers">
+                    <input type="radio" name="q15" value="a"> Signals the person to change direction<br>
+                    <input type="radio" name="q15" value="b"> Establishes the direction of march<br>
+                    <input type="radio" name="q15" value="c"> Marks the left boundary of the formation<br>
+                    <input type="radio" name="q15" value="d"> Establishes the position of the leader<br>
+                </div>
+            </div>
+        </div>
+        <!-- Add the rest of the questions similarly -->
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Your score: <span id="score"></span>/15</p>
+        <div class="summary" id="summary"></div>
+    </div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: "c",
+            q2: "a",
+            q3: "b",
+            q4: "b",
+            q5: "b",
+            q6: "c",
+            q7: "b",
+            q8: "b",
+            q9: "a",
+            q10: "a",
+            q11: "a",
+            q12: "b",
+            q13: "a",
+            q14: "b",
+            q15: "b"
+        };
+
+        const questions = [
+            "What is the primary aim of the NCC Army Wing drill?",
+            "What is the first command given during a drill session?",
+            "What does the command “Stand at ease” instruct soldiers to do?",
+            "When marching, what is the normal arm swing?",
+            "What is the purpose of the “Halt” command?",
+            "How many paces does a person take when executing a “halt” command in drill?",
+            "Which foot is used for the first step when marching?",
+            "What does the command \"Eyes Right\" mean in a drill?",
+            "What is the command given to march in the opposite direction while on the spot?",
+            "What is the proper posture for \"Attention\"?",
+            "What is a \"Right Face\" command?",
+            "What does the command \"Fall in\" mean?",
+            "What is the \"March Off\" command used for?",
+            "When does the \"Present Arms\" command apply in a drill?",
+            "What does the \"Right Marker\" command do in the drill?"
+        ];
+
+        let score = 0;
+        const form = document.getElementById("quizForm");
+        const summary = document.getElementById("summary");
+        summary.innerHTML = ""; // Clear previous results
+
+        for (let i = 1; i <= 15; i++) {
+            const userAnswer = form.querySelector(`input[name="q${i}"]:checked`);
+            const correctAnswer = answers[`q${i}`];
+            const question = questions[i - 1];
+
+            const userValue = userAnswer ? userAnswer.value : null;
+            if (userValue === correctAnswer) {
+                score++;
+                summary.innerHTML += `<p><b>${i}. ${question}</b><br>
+                    <span class="correct">Correct: ${correctAnswer.toUpperCase()}</span></p>`;
+            } else {
+                summary.innerHTML += `<p><b>${i}. ${question}</b><br>
+                    <span class="incorrect">Your Answer: ${userValue ? userValue.toUpperCase() : "Not Answered"}</span><br>
+                    <span class="correct">Correct: ${correctAnswer.toUpperCase()}</span></p>`;
+            }
+        }
+
+        document.getElementById("score").textContent = score;
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+</body>
+</html>

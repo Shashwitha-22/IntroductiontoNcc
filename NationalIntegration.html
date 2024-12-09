@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Integration Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>National Integration Quiz</h1>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. When is National Integration Day celebrated in India?</p>
+            <div class="answers">
+                <input type="radio" name="q1" value="a"> 14th November<br>
+                <input type="radio" name="q1" value="b"> 19th November<br>
+                <input type="radio" name="q1" value="c"> 26th January<br>
+                <input type="radio" name="q1" value="d"> 15th August<br>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. What is the main aim of National Integration?</p>
+            <div class="answers">
+                <input type="radio" name="q2" value="a"> Economic development<br>
+                <input type="radio" name="q2" value="b"> Religious harmony<br>
+                <input type="radio" name="q2" value="c"> Political unity<br>
+                <input type="radio" name="q2" value="d"> Cultural unification<br>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. Which article of the Indian Constitution promotes the idea of fraternity among citizens?</p>
+            <div class="answers">
+                <input type="radio" name="q3" value="a"> Article 14<br>
+                <input type="radio" name="q3" value="b"> Article 19<br>
+                <input type="radio" name="q3" value="c"> Article 51A<br>
+                <input type="radio" name="q3" value="d"> Article 25<br>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. Who is known as the "Iron Man of India" for promoting unity?</p>
+            <div class="answers">
+                <input type="radio" name="q4" value="a"> Jawaharlal Nehru<br>
+                <input type="radio" name="q4" value="b"> Sardar Vallabhbhai Patel<br>
+                <input type="radio" name="q4" value="c"> Mahatma Gandhi<br>
+                <input type="radio" name="q4" value="d"> Subhas Chandra Bose<br>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. What is the motto of "Ek Bharat Shreshtha Bharat" initiative?</p>
+            <div class="answers">
+                <input type="radio" name="q5" value="a"> Unity in Diversity<br>
+                <input type="radio" name="q5" value="b"> Together We Rise<br>
+                <input type="radio" name="q5" value="c"> Strength through Unity<br>
+                <input type="radio" name="q5" value="d"> One Nation, One Dream<br>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. What does "Unity in Diversity" signify in the Indian context?</p>
+            <div class="answers">
+                <input type="radio" name="q6" value="a"> Political stability<br>
+                <input type="radio" name="q6" value="b"> Coexistence of different cultures<br>
+                <input type="radio" name="q6" value="c"> Economic prosperity<br>
+                <input type="radio" name="q6" value="d"> Military strength<br>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. Which freedom fighter emphasized Hindu-Muslim unity?</p>
+            <div class="answers">
+                <input type="radio" name="q7" value="a"> Bal Gangadhar Tilak<br>
+                <input type="radio" name="q7" value="b"> Mahatma Gandhi<br>
+                <input type="radio" name="q7" value="c"> Bhagat Singh<br>
+                <input type="radio" name="q7" value="d"> Lala Lajpat Rai<br>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. Which festival is considered a symbol of unity in India?</p>
+            <div class="answers">
+                <input type="radio" name="q8" value="a"> Diwali<br>
+                <input type="radio" name="q8" value="b"> Holi<br>
+                <input type="radio" name="q8" value="c"> Eid<br>
+                <input type="radio" name="q8" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. What was the theme of National Integration Day 2022?</p>
+            <div class="answers">
+                <input type="radio" name="q9" value="a"> Unity Through Sports<br>
+                <input type="radio" name="q9" value="b"> Bharat Ekta<br>
+                <input type="radio" name="q9" value="c"> Building Bridges<br>
+                <input type="radio" name="q9" value="d"> Strength in Diversity<br>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. What does the Ashoka Chakra on the Indian flag represent?</p>
+            <div class="answers">
+                <input type="radio" name="q10" value="a"> Freedom<br>
+                <input type="radio" name="q10" value="b"> Progress<br>
+                <input type="radio" name="q10" value="c"> Peace<br>
+                <input type="radio" name="q10" value="d"> Unity<br>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <p>11. Which Indian state is known as the "Land of Unity in Diversity"?</p>
+            <div class="answers">
+                <input type="radio" name="q11" value="a"> Gujarat<br>
+                <input type="radio" name="q11" value="b"> Kerala<br>
+                <input type="radio" name="q11" value="c"> Punjab<br>
+                <input type="radio" name="q11" value="d"> Uttar Pradesh<br>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <p>12. What was the primary purpose of the "Quit India Movement"?</p>
+            <div class="answers">
+                <input type="radio" name="q12" value="a"> Economic reform<br>
+                <input type="radio" name="q12" value="b"> Political unity<br>
+                <input type="radio" name="q12" value="c"> Social integration<br>
+                <input type="radio" name="q12" value="d"> Independence<br>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p>13. The "Unity March" is associated with which Indian leader?</p>
+            <div class="answers">
+                <input type="radio" name="q13" value="a"> Sardar Vallabhbhai Patel<br>
+                <input type="radio" name="q13" value="b"> Mahatma Gandhi<br>
+                <input type="radio" name="q13" value="c"> Jawaharlal Nehru<br>
+                <input type="radio" name="q13" value="d"> Subhas Chandra Bose<br>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p>14. What does "Bharat Mata" symbolize?</p>
+            <div class="answers">
+                <input type="radio" name="q14" value="a"> The Indian culture<br>
+                <input type="radio" name="q14" value="b"> The Indian territory<br>
+                <input type="radio" name="q14" value="c"> The unity of the Indian people<br>
+                <input type="radio" name="q14" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p>15. Which movement in India emphasized "unity in struggle"?</p>
+            <div class="answers">
+                <input type="radio" name="q15" value="a"> Non-Cooperation Movement<br>
+                <input type="radio" name="q15" value="b"> Civil Disobedience Movement<br>
+                <input type="radio" name="q15" value="c"> Quit India Movement<br>
+                <input type="radio" name="q15" value="d"> Swadeshi Movement<br>
+            </div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Your score: <span id="score"></span>/15</p>
+    </div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: "b",
+            q2: "b",
+            q3: "c",
+            q4: "b",
+            q5: "a",
+            q6: "b",
+            q7: "b",
+            q8: "d",
+            q9: "b",
+            q10: "c",
+            q11: "d",
+            q12: "d",
+            q13: "a",
+            q14: "d",
+            q15: "c",
+        };
+
+        let score = 0;
+        const form = document.forms["quizForm"];
+
+        for (const question in answers) {
+            const selected = form[question].value;
+            if (selected === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById("score").innerText = score;
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+</body>
+</html>

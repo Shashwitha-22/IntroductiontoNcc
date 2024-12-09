@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obstacle Training Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Obstacle Training Quiz</h1>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is the main purpose of obstacle training in the Army?</p>
+            <div class="answers">
+                <input type="radio" name="q1" value="a"> To improve flexibility<br>
+                <input type="radio" name="q1" value="b"> To build physical endurance<br>
+                <input type="radio" name="q1" value="c"> For entertainment<br>
+                <input type="radio" name="q1" value="d"> To practice navigation<br>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. What is the typical length of an obstacle course in training?</p>
+            <div class="answers">
+                <input type="radio" name="q2" value="a"> 100 meters<br>
+                <input type="radio" name="q2" value="b"> 200 meters<br>
+                <input type="radio" name="q2" value="c"> 500 meters<br>
+                <input type="radio" name="q2" value="d"> 1 kilometer<br>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. Which of the following is NOT a standard obstacle in military training?</p>
+            <div class="answers">
+                <input type="radio" name="q3" value="a"> Rope climbing<br>
+                <input type="radio" name="q3" value="b"> Tire running<br>
+                <input type="radio" name="q3" value="c"> Swimming pool<br>
+                <input type="radio" name="q3" value="d"> Wall scaling<br>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. What is the primary benefit of team obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q4" value="a"> Builds individual strength<br>
+                <input type="radio" name="q4" value="b"> Develops teamwork and coordination<br>
+                <input type="radio" name="q4" value="c"> Improves speed<br>
+                <input type="radio" name="q4" value="d"> Enhances solo performance<br>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. What equipment is commonly used in rope climbing obstacles?</p>
+            <div class="answers">
+                <input type="radio" name="q5" value="a"> Gloves<br>
+                <input type="radio" name="q5" value="b"> Harness<br>
+                <input type="radio" name="q5" value="c"> Bare hands<br>
+                <input type="radio" name="q5" value="d"> Shoes with spikes<br>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. Which muscle group is most engaged during wall scaling?</p>
+            <div class="answers">
+                <input type="radio" name="q6" value="a"> Legs<br>
+                <input type="radio" name="q6" value="b"> Arms<br>
+                <input type="radio" name="q6" value="c"> Core<br>
+                <input type="radio" name="q6" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. Why is balance important in obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q7" value="a"> To avoid injuries<br>
+                <input type="radio" name="q7" value="b"> To improve agility<br>
+                <input type="radio" name="q7" value="c"> To maintain stability<br>
+                <input type="radio" name="q7" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. What type of terrain is best suited for obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q8" value="a"> Flat ground<br>
+                <input type="radio" name="q8" value="b"> Rocky terrain<br>
+                <input type="radio" name="q8" value="c"> Mixed terrain<br>
+                <input type="radio" name="q8" value="d"> Sandy ground<br>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. How can you improve your performance in obstacle courses?</p>
+            <div class="answers">
+                <input type="radio" name="q9" value="a"> Regular practice<br>
+                <input type="radio" name="q9" value="b"> Proper diet<br>
+                <input type="radio" name="q9" value="c"> Adequate rest<br>
+                <input type="radio" name="q9" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. What is the main challenge of tire flipping?</p>
+            <div class="answers">
+                <input type="radio" name="q10" value="a"> Speed<br>
+                <input type="radio" name="q10" value="b"> Technique<br>
+                <input type="radio" name="q10" value="c"> Strength<br>
+                <input type="radio" name="q10" value="d"> Endurance<br>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <p>11. What safety measure should always be taken during obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q11" value="a"> Wearing protective gear<br>
+                <input type="radio" name="q11" value="b"> Checking equipment<br>
+                <input type="radio" name="q11" value="c"> Having a trainer present<br>
+                <input type="radio" name="q11" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <p>12. What is the purpose of the "monkey bars" obstacle?</p>
+            <div class="answers">
+                <input type="radio" name="q12" value="a"> To test grip strength<br>
+                <input type="radio" name="q12" value="b"> To improve coordination<br>
+                <input type="radio" name="q12" value="c"> To build upper body strength<br>
+                <input type="radio" name="q12" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p>13. What is the ideal footwear for obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q13" value="a"> Running shoes<br>
+                <input type="radio" name="q13" value="b"> Hiking boots<br>
+                <input type="radio" name="q13" value="c"> Lightweight trainers<br>
+                <input type="radio" name="q13" value="d"> Sandals<br>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p>14. What is a common mistake in obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q14" value="a"> Ignoring warm-up exercises<br>
+                <input type="radio" name="q14" value="b"> Rushing through obstacles<br>
+                <input type="radio" name="q14" value="c"> Not following proper form<br>
+                <input type="radio" name="q14" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p>15. How can you reduce the risk of injury during obstacle training?</p>
+            <div class="answers">
+                <input type="radio" name="q15" value="a"> Using proper technique<br>
+                <input type="radio" name="q15" value="b"> Following a trainer's advice<br>
+                <input type="radio" name="q15" value="c"> Gradually increasing difficulty<br>
+                <input type="radio" name="q15" value="d"> All of the above<br>
+            </div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p>Your score: <span id="score"></span>/15</p>
+    </div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: "b",
+            q2: "c",
+            q3: "c",
+            q4: "b",
+            q5: "c",
+            q6: "d",
+            q7: "d",
+            q8: "c",
+            q9: "d",
+            q10: "c",
+            q11: "d",
+            q12: "d",
+            q13: "c",
+            q14: "d",
+            q15: "d",
+        };
+
+        let score = 0;
+        const form = document.forms["quizForm"];
+
+        for (const question in answers) {
+            const selected = form[question].value;
+            if (selected === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById("score").innerText = score;
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+</body>
+</html>
